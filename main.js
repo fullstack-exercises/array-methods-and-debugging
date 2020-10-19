@@ -1,19 +1,23 @@
-const array = [
-    { name: "N. Armstrong", profession: "spacecowboy", age: 89 },
-    { name: "H. de Haan", profession: "kippen hypnotiseur", age: 59 },
-    { name: "A. Curry", profession: "kikvorsman", age: 32 },
-    { name: "F. Vonk", profession: "slangenmelker", age: 36 },
-    { name: "B. Bunny", profession: "konijnen uitlaatservice", age: 27 },
-    { name: "Dr.Evil", profession: "digital overlord", age: 56 }
-];
+// Part A
+const ikRockArrowFunctions = () => {
+    console.log("Joe, ik rock de arrow functions!");
+};
 
-let currentYear = new Date().getFullYear();
+ikRockArrowFunctions();
 
-for (let person of array) {
-    // console.log("Dit is de gehele persoon:", person);
-    // console.log("Dit is", person.name);
-    // console.log("Geboren in", currentYear - person.age);
-    if (person.age >= 50) {
-        console.log(person.name + " is een " + person.profession);
-    }
-}
+// Part B
+// Opdracht: schrijf de onderstaande functie om naar een arrow functie op 1 regel.
+const fivePlusSeven = () => console.log(5 + 7);
+fivePlusSeven();
+
+// Part C
+const myFunction = (a, b) => a + b;
+myFunction();
+
+// Part D
+const myFunction2 = a => a;
+myFunction2();
+
+// Part E
+const createObject = () => ({ greeting: "hoi" });
+console.log(createObject());
