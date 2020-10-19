@@ -10,10 +10,10 @@ const array = [
 let currentYear = new Date().getFullYear();
 
 for (let person of array) {
+    // console.log("Dit is de gehele persoon:", person);
+    // console.log("Dit is", person.name);
+    // console.log("Geboren in", currentYear - person.age);
     if (person.age >= 50) {
-        // console.log("Dit is de gehele persoon:", person);
-        // console.log("Dit is", person.name);
-        // console.log("Geboren in", currentYear - person.age);
         console.log(person.name + " is een " + person.profession);
     }
 }
