@@ -1,22 +1,51 @@
 // Part A
-const ikRockArrowFunctions = () => {
-    console.log("Joe, ik rock de arrow functions!");
-};
-ikRockArrowFunctions();
+const addTheWordCool = () => {
+    let words = ["nice", "awesome", "tof"];
+    words.push('cool');
+    return words;
+}
+console.log(addTheWordCool()); // result: ["nice", "awesome", "tof", "cool"]
 
 // Part B
-// Opdracht: schrijf de onderstaande functie om naar een arrow functie op 1 regel.
-const fivePlusSeven = () => console.log(5 + 7);
-fivePlusSeven();
+const returnItems = () => {
+    let items = ['appels', 'peren', 'citroenen'];
+    return items.length;
+}
+console.log(returnItems()); // 3
 
 // Part C
-const myFunction = (a, b) => a + b;
-myFunction();
+const returnFirstItem = () => {
+    let items = ['Belgie', 'Nederland', 'Luxenburg'];
+    return items[0];
+}
+console.log(returnFirstItem()); // result: Belgie
 
 // Part D
-const myFunction2 = a => a;
-myFunction2();
+const returnLastItem = () => {
+    let items = ['Haas', 'Cavia', 'Kip', 'Schildpad'];
+    return items[items.length - 1];
+}
+console.log(returnLastItem()); // result: Schildpad
 
 // Part E
-const createObject = () => ({ greeting: "hoi" });
-console.log(createObject());
+const presidents = ["Trump", "Obama", "Bush", "Clinton"]
+const dissapearFirstIteminArray = () => {
+    return presidents.slice(2)
+}
+console.log(dissapearFirstIteminArray()); // result: [ 'Obama', 'Bush', 'Clinton' ]
+
+// Part F
+const stringsTogether = () => {
+    let words = ['Winc', 'Academy', 'is', 'leuk', ';-}'];
+    return words.join();
+}
+console.log(stringsTogether()); // result: Winc,Academy,is,leuk,;-}
+
+// Part G
+const combineArrays = () => {
+    array1 = [1, 2, 3];
+    array2 = [4, 5, 6];
+    combine = [...array1, ...array2];
+    return combine;
+}
+console.log(combineArrays()); // result: [ 1, 2, 3, 4, 5, 6 ]
